@@ -8,7 +8,7 @@ $ make
 ```
 
 ## Uso
-Para iniciar a ordenação:
+Para realizar a ordenação:
 ```
 ./sortbooks
 ```
@@ -22,7 +22,7 @@ Ano de edição
 ```
 
 O projeto já contém a lista de livros disponibilizada no desafio.
-A lista de livros ordenada de acordo com as regras estará no arquivo `livrosordenados.txt` após a conclusão do programa.
+A lista de livros ordenados de acordo com as regras estará no arquivo `livrosordenados.txt` após a conclusão do programa.
 
 ## Arquivo de configuração
 Para adicionar regras de ordenação, utiliza-se o arquivo `.orderrc`. Há três opções de regras de ordenação:
