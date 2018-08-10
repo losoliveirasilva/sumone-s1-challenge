@@ -9,19 +9,20 @@
 int main()
 {
 	RCFile rcfile(".orderrc");
-
-	std::cout << rcfile.useTitle << "\n"
-		      << rcfile.useAuthor << "\n"
-		      << rcfile.useYear << "\n"
-		      << rcfile.titleAscending << "\n"
-		      << rcfile.authorAscending << "\n"
-		      << rcfile.yearAscending << "\n";
 	
 	std::ofstream bookssorted;
 	bookssorted.open ("livrosordenados.txt");
+	if(!bookssorted.is_open()){
+		std::cout << "Failed to open file\n\n";
+	    return -1;
+	}
 
 	std::vector<Book> books;
 	std::ifstream infile("livros.txt");
+	if(infile.fail()){
+		std::cout << "Failed to open books file\n\n";
+	    return -1;
+	}
 	std::string line;
 	std::string title, author, year;
 	char infoAux = 0;
@@ -39,7 +40,6 @@ int main()
 			case 2:
 				year = line;
 				infoAux = 0;
-				//std::cout << title << " | " << author << " | " << year << "\n";
 				books.push_back({title, author, (unsigned short)stoi(year)});
 				break;
 		}
