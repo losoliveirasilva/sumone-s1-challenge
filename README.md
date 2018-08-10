@@ -19,3 +19,10 @@ Para adicionar regras de ordenação, utiliza-se o arquivo `.orderrc`. Há três
 - Título: `titulo`
 
 Sendo que todas elas podem ser configuradas como `ascendente` ou `descendente`.
+
+O exemplo de configuração abaixo configura Edição descendente, Autor descendente, Título ascendente:
+```
+edicao=descendente
+autor=descendente
+titulo=ascendente
+```
