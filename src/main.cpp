@@ -8,6 +8,7 @@
 
 int main()
 {
+	// Open configuration file
 	RCFile rcfile(".orderrc");
 	
 	std::ofstream bookssorted;
@@ -27,6 +28,7 @@ int main()
 	std::string title, author, year;
 	char infoAux = 0;
 
+	// Create books unsorted vector
 	while (std::getline(infile, line)){
 		switch(infoAux){
 			case 0:
@@ -45,6 +47,7 @@ int main()
 		}
 	}
 
+	// Sort books
 	std::sort(books.begin(), books.end(), [=](const Book& a, const Book& b) {
 		if(rcfile.useYear > -1){
 		    if(rcfile.yearAscending and a.year < b.year){
@@ -85,6 +88,7 @@ int main()
 		return false;
 	});
 
+	// Write sorted books list file
 	for(auto it: books)
 		bookssorted << it.title << "\t" << it.author << "\t" << it.year << "\n";
 
