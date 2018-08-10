@@ -6,6 +6,10 @@ Este projeto foi escrito em C++, e compilado utilizando o g++ (GCC) 8.2.0. Para 
 ```
 $ make
 ```
+Necessário GNU Make, e foi utilizado a versão 4.2.1, caso não seja possível, deve-se utilizar diretamente o seguinte comando:
+```
+$ g++ src/*.cpp -o sortbooks -Wall -Wextra -pedantic -std=c++11
+```
 
 ## Uso
 Para realizar a ordenação:
