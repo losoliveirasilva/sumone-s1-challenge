@@ -1,5 +1,5 @@
 # Desafio SumOne
-Projeto realizado para o processo seletivo da SumOne. Requisitos podem ser encontrados [aqui](https://github.com/sumoners/s1-programming-challenges/tree/master/v2).
+Projeto realizado para o processo seletivo da SumOne. Requisitos podem ser encontrados [aqui](https://github.com/sumoners/s1-programming-challenges/tree/master/v2). Um documento sobre a arquitetura e as escolhas feitas por mim pode ser encontrado na raiz do projeto.
 
 ## Instalação
 Este projeto foi escrito em C++, e compilado utilizando o g++ (GCC) 8.2.0. Para compilá-lo, utilize o seguinte comando:
