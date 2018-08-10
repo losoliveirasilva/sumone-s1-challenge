@@ -10,6 +10,11 @@ int main()
 {
 	// Open configuration file
 	RCFile rcfile(".orderrc");
+
+	if(rcfile.useTitle == -1 and rcfile.useAuthor == -1 and rcfile.useYear == -1){
+		std::cout << "No rules\n\n";
+		return -1;
+	}
 	
 	std::ofstream bookssorted;
 	bookssorted.open ("livrosordenados.txt");
